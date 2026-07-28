@@ -112,12 +112,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-    schedule.every(5).hours.do(main)
-
-    print("\n🚀 Ranchi Watch is running...")
-    print("⏰ Checking every 5 hours...\n")
-
-    while True:
-        schedule.run_pending()
-        time.sleep(1)
